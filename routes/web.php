@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HandphoneController;
 use App\Http\Controllers\LaptopController;
 use App\Http\Controllers\LaptopDuaController;
 use Illuminate\Support\Facades\Route;
@@ -16,8 +17,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/laptop', [LaptopController::class,'index']);
-
-Route::get('/yourlaptop', [LaptopDuaController::class,'index']);
+Route::get('/handphone', [HandphoneController::class,'index']);
 
 Route::get('/laptop/{id}', [LaptopController::class, 'show']);
-Route::get('/yourlaptop/{id}', [LaptopDuaController::class, 'show']);
+Route::get('/handphone/{id}', [HandphoneController::class, 'show']);

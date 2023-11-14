@@ -11,13 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('laptopkeduas', function (Blueprint $table) {
-            $table->id() -> autoIncrement();
+        Schema::create('handphones', function (Blueprint $table) {
+            $table->id()->autoIncrement();
             $table->string('nama');
-            $table->string('prosesor');
-            $table->string('vga');
-            $table->string('harga');
-            $table->string('rilis');
+            $table->string('merek');
+            $table->string('chipset');
+            $table->integer('harga');
+            $table->date('release_date');
             $table->timestamps();
         });
     }
@@ -27,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('laptopkeduas');
+        Schema::dropIfExists('handphones');
     }
 };

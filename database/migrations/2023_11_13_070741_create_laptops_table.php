@@ -16,8 +16,8 @@ return new class extends Migration
             $table->string('nama');
             $table->string('prosesor');
             $table->string('vga');
-            $table->string('harga');
-            $table->string('rilis');
+            $table->integer('harga');
+            $table->date('rilis');
             $table->timestamps();
         });
     }
