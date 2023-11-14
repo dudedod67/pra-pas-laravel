@@ -9,10 +9,10 @@
                     NAMA
                 </th>
                 <th scope="col" class="px-6 py-3">
-                    PROSESOR
+                    MEREK
                 </th>
                 <th scope="col" class="px-6 py-3">
-                    VGA
+                    CHIPSET
                 </th>
                 <th scope="col" class="px-6 py-3">
                     ACTIONS
@@ -20,19 +20,19 @@
             </tr>
         </thead>
         <tbody>
-            @foreach ($laptops as $laptop)
+            @foreach ($handphones as $hp)
             <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                    {{$laptop['nama']}}
+                    {{$hp['nama']}}
                 </th>
                 <td class="px-6 py-4">
-                    {{$laptop['prosesor']}}
+                    {{$hp['merek']}}
                 </td>
                 <td class="px-6 py-4">
-                    {{$laptop['vga']}}
+                    {{$hp['chipset']}}
                 </td>
                 <td class="px-6 py-4">
-                    <a href="{{url('/yourlaptop/' . $laptop['id']) }}" class="bg-transparent hover:bg-blue-500 text-white font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">DETAIL</a>
+                    <a href="{{url('/handphone/' . $hp['id']) }}" class="bg-transparent hover:bg-blue-500 text-white font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">DETAIL</a>
                 </td>
             </tr>
             @endforeach

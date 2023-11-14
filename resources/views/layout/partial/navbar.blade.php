@@ -32,7 +32,7 @@
             <div class="flex space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
               <a href="/laptop" class="text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">My Laptop</a>
-              <a href="/yourlaptop" class="text-white hover:text-white rounded-md px-3 py-2 text-sm font-medium">Your Laptop</a>
+              <a href="/handphone" class="text-white hover:text-white rounded-md px-3 py-2 text-sm font-medium">Your Laptop</a>
             </div>
           </div>
         </div>
